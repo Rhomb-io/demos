@@ -1,0 +1,3 @@
+# Description
+The device automatically connects to the WLAN network. Send a TCP frame with the temperature and the device ID. The time interval in which the data is transmitted is configurable. An offset is also configurable for the calibration of the measurements, as well as the ID of the device and the IP and port of the destination server of the data.
+The device has implemented the "Deep Sleep" mode for battery saving during intervals between shipments.
