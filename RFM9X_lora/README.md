@@ -1,0 +1,3 @@
+# Description
+The LoRa RFM9X is a Rhomb.io certified module that allows wide range wireless communications based on the LoRa Alliance specification. This module offers a wide range of signal range, low power consumption and secure data transmission.
+The LoRa RFM9X module allows long range communications through radio frequency, so it is designed to bring your product based on the Rhomb.io platform the necessary connectivity for wireless data transmission.
