@@ -1,0 +1,2 @@
+# Description
+The RFM69 is a Rhomb.io Slave Module based on the integrated RFM69CW. It is a module capable of transmitting or receiving data by radio frequency. It can act as both transmitter and receiver, so it is a transceiver. It can work in a wide range of frequencies including 315,433, 868 and 915MHz. The main RF parameters are programmable. It is optimized for low power consumption while offering a high level of power in the RF signal.
