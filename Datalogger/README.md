@@ -1,0 +1,2 @@
+# Description
+A datalogger is a device that receives data from other devices and stores it in a file. These data files are called "logs". Logs are used to monitor the behavior of a device and track it. With all this, we can locate possible errors and / or debug problems. They are usually connected for long periods of time to collect as much data as possible.
