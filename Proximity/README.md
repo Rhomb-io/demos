@@ -1,0 +1,2 @@
+# Description
+The Proximity Rhomb.io Slave Module is a module certified by Rhomb.io that has two types of sensors, one of light and one of proximity. The ambient or proximity light sensor can be used to measure the distance between the module and an obstacle.
