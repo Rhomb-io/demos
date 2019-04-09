@@ -1,0 +1,2 @@
+# Description
+The device automatically connects to the WLAN network. Send a TCP frame with the temperature and the device ID. The time interval in which the data is transmitted is configurable. An offset is also configurable for the calibration of the measurements.
