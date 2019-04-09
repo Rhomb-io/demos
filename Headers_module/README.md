@@ -1,0 +1,5 @@
+#Description
+This slave module has 2 main functionalities:
+1. Expose signal lines by means of a header, in plates that do not have these lines physically exposed (through pins or test pads), for example "Hyperion".
+2. Level shifter: Reduce or increase the voltage at which the pins of the module work, independently of the voltage at which the board works. Something similar to a "transformer".
+The Rhomb.io Headers slave module is a slave module with the function of changing the voltage of the pins of the module and conditioning the signal in case of wanting to connect another module that operates at a voltage different from that provided by the PCB. It works as an interface between several devices being able to connect with the headers that it has in the upper face. It has a high voltage range and can operate from 1.65 volts to 5.5 volts. Both in step-up mode and in step-down mode.
