@@ -1,0 +1,151 @@
+ <head><meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<!--  <script type="text/javascript" src="./jquery-3.3.1.min.js"></script> -->
+
+
+
+ 
+ <style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+ .button1 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+ .button2 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button3 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button4 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button5 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button6 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button7 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}  
+.button8 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}   
+.button9 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}  
+.button10 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}      
+.button11 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+} 
+.button12 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+} 
+.button13 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button14 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button15 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+.button16 {
+	background-color: #297bb7; border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer; value: 'ON';
+}
+			</style></head>
+            
+          <body><h1>Rhomb.io Wifi Relay 2ch.</h1>
+			
+                      <p>Al presionar se acciona el relé deseado</p>
+
+        
+          <p><button class="button1" id="mybutton1">1-ON</button><button class="button2" id="mybutton2">2-ON</button>
+		  <p><button class="button15" id="mybutton15">1-Blink</button><button class="button16" id="mybutton16">2-Blink</button>
+		  <p><img src="https://wiki.rhomb.io/images/logo.png"></p>
+          </body>
+		  
+		   <script type="text/javascript">
+    $('.button1').click(function () {
+      
+	  var $this = $(this);
+	 // console.log('$this', $this.text())
+if( $this.text() == '1-ON'){
+$.ajax({type: 'GET', url: 'http://192.168.0.172/H1', connection: 'close'});
+$this.text('1-OFF');
+document.getElementById("mybutton1").style.backgroundColor = "gray";
+ }
+ else{
+ $.ajax({type: 'GET', url: 'http://192.168.0.172/L1', connection: 'close'});
+ $this.text('1-ON');
+document.getElementById("mybutton1").style.backgroundColor = "#297bb7";
+}
+ 
+ })
+
+ // boton2
+ 
+ $('.button2').click(function () {
+      
+	  var $this = $(this);
+	 // console.log('$this', $this.text())
+if( $this.text() == '2-ON'){
+$.ajax({type: 'GET', url: 'http://192.168.0.172/H2', connection: 'close'});
+$this.text('2-OFF');
+document.getElementById("mybutton2").style.backgroundColor = "gray";
+ }
+ else{
+ $.ajax({type: 'GET', url: 'http://192.168.0.172/L2', connection: 'close'});
+ $this.text('2-ON');
+document.getElementById("mybutton2").style.backgroundColor = "#297bb7";
+}
+ 
+ })
+
+
+   // boton15
+
+$('.button15').click(function () {
+      
+	  var $this = $(this);
+	 // console.log('$this', $this.text())
+if( $this.text() == '1-Blink'){
+$.ajax({type: 'GET', url: 'http://192.168.0.172/HF', connection: 'close'});
+
+
+ }
+ else{
+ $.ajax({type: 'GET', url: 'http://192.168.0.172/LF', connection: 'close'});
+ $this.text('15-ON');
+document.getElementById("mybutton15").style.backgroundColor = "#297bb7";
+}
+ 
+ })
+   // boton16
+
+$('.button16').click(function () {
+      
+	  var $this = $(this);
+	 // console.log('$this', $this.text())
+if( $this.text() == '2-Blink'){
+$.ajax({type: 'GET', url: 'http://192.168.0.172/HG', connection: 'close'});
+
+
+ }
+ else{
+ $.ajax({type: 'GET', url: 'http://192.168.0.172/LG', connection: 'close'});
+ $this.text('16-ON');
+document.getElementById("mybutton16").style.backgroundColor = "#297bb7";
+}
+ 
+ })
+</script>
+		  
+		  
+		  </html>
